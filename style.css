@@ -111,3 +111,27 @@ tr td:last-child {
 .restartContainer {
     margin-top: 64px;
 }
+
+.winner-field {
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 20%;
+    right: 20%;
+    background-color: rgba(0,0,0, 0.9);
+    color: white;
+    text-align: center;
+    z-index: 10;
+}
+
+.winner-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.winner-box span {
+    font-size: 120px;
+    font-weight: bold;
+}
