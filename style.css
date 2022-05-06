@@ -1,5 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    margin: 36px;
+}
+
+.d-flex img {
+    width: 64px;
+}
+
+h1 {
+    margin-left: 16px;
+}
+
+.player-panel {
+    display: flex;
+    flex-direction: row;
+}
+
+.active-player {
+    opacity: 0.5;
+}
+
+.winner-line {
+    width: 340px;
+    height: 15px;
+    background-color: rgba(226, 43, 68, 0.9);
+    position: absolute;
+    z-index: 5;
+}
+
+.vertikal-line {
+    transform: rotate(90deg);
+    z-index: 5;
+}
+
+.diagonal1-line {
+    transform: rotate(45deg);
+    width: 450px;
+    z-index: 5;
+}
+
+.diagonal2-line {
+    transform: rotate(135deg);
+    width: 450px;
+    z-index: 5;
+}
+
 table {
     border-collapse: collapse;
+}
+
+.table-center {
+    position: relative;
 }
 
 tr {
@@ -44,4 +102,12 @@ tr td:last-child {
 
 .d-none {
     display: none;
+}
+
+.finishedGame {
+    pointer-events: none;
+}
+
+.restartContainer {
+    margin-top: 64px;
 }
