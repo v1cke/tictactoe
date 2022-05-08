@@ -124,13 +124,25 @@ tr td:last-child {
     color: white;
     text-align: center;
     z-index: 10;
+    animation: zoomIn 500ms ease-in-out;
 }
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
 
 .winner-box {
     display: flex;
+    height: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .winner-box span {

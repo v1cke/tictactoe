@@ -29,60 +29,58 @@ function checkWin() {
     if (fields[1] == fields[2] && fields[2] == fields[3] && fields[1]) {
         winner = fields[1];
         document.getElementById('horizontal-line1').style.transform = 'scaleX(1)';
-       setTimeout(function(){gameFinished(winner);}, 2000);
+       gameFinished(winner);
     }
 
     if (fields[4] == fields[5] && fields[5] == fields[6] && fields[4]) {
         winner = fields[4];
         document.getElementById('horizontal-line2').style.transform = 'scaleX(1)';
-       setTimeout(function(){gameFinished(winner);}, 2000);
+       gameFinished(winner);
     }
 
     if (fields[7] == fields[8] && fields[8] == fields[9] && fields[7]) {
         winner = fields[7];
         document.getElementById('horizontal-line3').style.transform = 'scaleX(1)';
-       setTimeout(function(){gameFinished(winner);}, 2000);
+       gameFinished(winner);
     }
 
     if (fields[1] == fields[4] && fields[4] == fields[7] && fields[4]) {
         winner = fields[4];
         document.getElementById('vertical-line1').style.transform = 'rotate(90deg) scaleX(1)';
-       setTimeout(function(){gameFinished(winner);}, 2000);
+       gameFinished(winner);
     }
 
     if (fields[2] == fields[5] && fields[5] == fields[8] && fields[2]) {
         winner = fields[2];
         document.getElementById('vertical-line2').style.transform = 'rotate(90deg) scaleX(1)';
-       setTimeout(function(){gameFinished(winner);}, 2000);
+       gameFinished(winner);
     }
 
     if (fields[3] == fields[6] && fields[6] == fields[9] && fields[3]) {
         winner = fields[3];
         document.getElementById('vertical-line3').style.transform = 'rotate(90deg) scaleX(1)';
-       setTimeout(function(){gameFinished(winner);}, 2000);
+       gameFinished(winner);
     }
 
     if (fields[1] == fields[5] && fields[5] == fields[9] && fields[1]) {
         winner = fields[1];
         document.getElementById('diagonal-line1').style.transform = 'rotate(45deg) scaleX(1)';
-        setTimeout(function(){gameFinished(winner);}, 2000);
+        gameFinished(winner);
     }
 
     if (fields[3] == fields[5] && fields[5] == fields[7] && fields[3]) {
         winner = fields[3];
         document.getElementById('diagonal-line2').style.transform = 'rotate(135deg) scaleX(1)';
-        setTimeout(function(){gameFinished(winner);}, 2000);
+        gameFinished(winner);
     }
 
 }
 
 
 function gameFinished(winner) {
-    document.getElementById('tr1').classList.add('finishedGame');
-    document.getElementById('tr2').classList.add('finishedGame');
-    document.getElementById('tr3').classList.add('finishedGame');
+    document.getElementById('table').classList.add('finishedGame');
     winnersound.play();
-    showWinner(winner);
+    setTimeout(function(){showWinner(winner);}, 1500);
 }
 
 function showWinner(winner) {
