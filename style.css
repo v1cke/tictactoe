@@ -33,21 +33,23 @@ h1 {
     background-color: rgba(226, 43, 68, 0.9);
     position: absolute;
     z-index: 5;
+    transform: scaleX(0.0);
+    transition: transform 225ms ease-in-out;
 }
 
 .vertikal-line {
-    transform: rotate(90deg);
+    transform: rotate(90deg) scaleX(0.0);
     z-index: 5;
 }
 
 .diagonal1-line {
-    transform: rotate(45deg);
+    transform: rotate(45deg) scaleX(0.0);
     width: 450px;
     z-index: 5;
 }
 
 .diagonal2-line {
-    transform: rotate(135deg);
+    transform: rotate(135deg) scaleX(0.0);
     width: 450px;
     z-index: 5;
 }
