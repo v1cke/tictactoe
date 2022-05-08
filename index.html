@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <script src="script.js"></script>
     <title>TicTacToe</title>
 </head>
 <body>
-    <div id="horizontal-line1" class="winner-line" style="top: 220px"></div>
-    <div id="horizontal-line2" class="winner-line" style="top: 357px"></div>
-    <div id="horizontal-line3" class="winner-line" style="top: 498px"></div>
+    <div id="horizontal-line1" class="winner-line mobile-l1" style="top: 220px"></div>
+    <div id="horizontal-line2" class="winner-line mobile-l2" style="top: 357px"></div>
+    <div id="horizontal-line3" class="winner-line mobile-l3" style="top: 498px"></div>
     <div id="winnerField" class="winner-field d-none" onclick="hideField()"></div>
     <div class="player-panel">
         <div id="p1" class="d-flex"><img src="./img/circle.png"><h1>Player 1</h1></div>
@@ -32,17 +33,17 @@
         <tr>
             <td onclick="fillShape(4)"><img id="circle-4" class="shape d-none" src="./img/circle.png">
                 <img id="cross-4" class="shape d-none" src="./img/cross.png">
-                <div id="vertical-line1" class="winner-line vertikal-line" style="top: 59px; left: -104px"></div>
+                <div id="vertical-line1" class="winner-line vertikal-line mobile-l4" style="top: 59px; left: -104px"></div>
             </td>
             <td id="table-center" onclick="fillShape(5)"><img id="circle-5" class="shape d-none" src="./img/circle.png">
                 <img id="cross-5"class="shape d-none" src="./img/cross.png">
-                <div id="diagonal-line1" class="winner-line diagonal1-line" style="top: 58px; left: -160px"></div>
-                <div id="diagonal-line2" class="winner-line diagonal2-line" style="top: 58px; left: -160px"></div>
-                <div id="vertical-line2" class="winner-line vertikal-line" style="top: 59px; left: -104px"></div>
+                <div id="diagonal-line1" class="winner-line diagonal1-line mobile-l7" style="top: 58px; left: -160px"></div>
+                <div id="diagonal-line2" class="winner-line diagonal2-line mobile-l8" style="top: 58px; left: -160px"></div>
+                <div id="vertical-line2" class="winner-line vertikal-line mobile-l5" style="top: 59px; left: -104px"></div>
             </td>
             <td onclick="fillShape(6)"><img id="circle-6" class="shape d-none" src="./img/circle.png">
                 <img id="cross-6" class="shape d-none" src="./img/cross.png">
-                <div id="vertical-line3" class="winner-line vertikal-line" style="top: 59px; left: -104px"></div>
+                <div id="vertical-line3" class="winner-line vertikal-line mobile-l6" style="top: 59px; left: -104px"></div>
             </td>
         </tr>
         <tr>
